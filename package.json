@@ -19,9 +19,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/babel-node src/api-server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "nodemon": "nodemon --exec babel-node",
+    "nodemon": "nodemon --exec node",
     "redis": "~/Downloads/redis-3.2.5/src/redis-server"
   },
   "repository": {

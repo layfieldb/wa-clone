@@ -1,5 +1,5 @@
-import express from 'express';
-import { setupRedis, getRedisClient } from './redis-client';
+const express = require('express');
+const { setupRedis, getRedisClient } = require('./redis-client');
 
 const app = express();
 
@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/redis-test', (req, res) => {
-  getRedisClient.incr('inc-test', (err, result) => {
+  getRedisClient().incr('inc-test', (err, result) => {
     if (err) {
       res.send('Error incrementing redis test');
     } else {
