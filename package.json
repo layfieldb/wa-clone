@@ -20,7 +20,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "nodemon": "nodemon --exec babel-node",
+    "nodemon": "nodemon --exec node",
     "redis": "~/Downloads/redis-3.2.5/src/redis-server"
   },
   "repository": {
