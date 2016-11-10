@@ -1,1 +1,1 @@
-web: node src/api-server.js
+web: ./node_modules/.bin/babel-node src/api-server.js
